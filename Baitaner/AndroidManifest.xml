@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.baitaner"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <application
+    	android:name=".AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        
+        <!-- 欢迎界面 -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Activity和Fragment使用原则，Activity之间没有数据传递，有关联的界面放在一个Activity中用Fragment -->
+        <!-- 每个Activity可以定义不一样的主题样式 -->
+        <!-- android:configChanges="orientation|screenSize"用于在旋转时不重建界面，在发布版本都要设置 -->
+        
+        <!-- 登陆界面（Light样式） -->
+        <activity
+            android:name=".LoginActivity"
+        	android:theme="@style/LightTheme"
+        	android:configChanges="orientation|screenSize" />
+        
+        <!-- 交易界面（主样式） -->
+        <activity
+            android:name=".MarketActivity"
+        	android:theme="@style/MainTheme" />
+        	
+       	<!-- 消息界面（主样式） -->
+        <activity
+            android:name=".MessagesActivity"
+        	android:theme="@style/MainTheme" />
+        	
+       	<!-- 设置界面（主样式） -->
+        <activity
+            android:name=".SettingsActivity"
+        	android:theme="@style/MainTheme" />
+        	
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
+</manifest>

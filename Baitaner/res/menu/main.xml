@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.baitaner.MainActivity" >
+
+    <item
+        android:id="@+id/messages"
+        android:icon="@drawable/actionbar_icon_messages"
+        android:showAsAction="always"
+        android:title="@string/menu_action_messages"/>
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/actionbar_icon_settings"
+        android:showAsAction="never"
+        android:title="@string/menu_action_settings"/>
+        
+    <item
+        android:id="@+id/feedback"
+        android:icon="@drawable/actionbar_icon_feedback"
+        android:showAsAction="never"
+        android:title="@string/menu_action_feedback"/>
+
+</menu>

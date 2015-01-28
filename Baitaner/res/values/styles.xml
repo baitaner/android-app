@@ -1,0 +1,90 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+
+
+
+
+    <!--
+        "MainTheme"主界面样式
+    -->
+    
+    <style name="MainTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MainActionBar</item>
+        <item name="android:itemBackground">@drawable/actionbar_menu_bg_selector</item>
+        <item name="android:actionBarItemBackground">@drawable/actionbar_bg_selector</item>
+        <item name="android:itemTextAppearance">@style/MainActionBarOverflow</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionOverflowButtonStyle">@android:style/Widget.Holo.ActionButton.Overflow</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_ab_back_holo_dark_am</item>
+    </style>
+
+    <style name="MainActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#ff5000</item>
+        <item name="android:titleTextStyle">@style/MainActionBarTitleText</item>
+    </style>
+
+    <style name="MainActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="MainActionBarOverflow" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    
+    
+    
+    
+    <!--
+        "LightTheme"用于登陆界面
+    -->
+    
+    <style name="LightTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/LightActionBar</item>
+        <item name="android:windowContentOverlay">@drawable/actionbar_divider</item>
+    </style>
+    
+    <style name="LightActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#f5f5f5</item>
+        <item name="android:titleTextStyle">@style/LightActionBarTitleText</item>
+    </style>
+    
+    <style name="LightActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    
+    
+    
+    
+    <!--
+                     以下为页面样式，样例，XML引用 style="@style/settings_text"
+        <style name="settings_text">
+        	<item name="android:textSize">17.0sp</item>
+        	<item name="android:textColor">#ffaaaaaa</item>
+    	</style>
+    -->
+    
+
+    
+    
+</resources>
